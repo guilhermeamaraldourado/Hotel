@@ -173,15 +173,17 @@ extension CalendarioView: JTAppleCalendarViewDataSource{
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         
-        guard let validCell = cell as? CellDia else {return}
-        
-        let calendar = Calendar.current
-        let result = calendar.compare(date, to: parameterDate ?? Date(), toGranularity: .day)
-        if result == .orderedSame || result == .orderedDescending{
-            
-            handleCellSelected(view: validCell, cellState: cellState)
-            handleCellTextColor(view: validCell, cellState: cellState)
-            
-        }
+        self.navigationController?.popViewController(animated: true)
+        //dismiss(animated: true, completion: nil)
+//        guard let validCell = cell as? CellDia else { return }
+//
+//        let calendar = Calendar.current
+//        let result = calendar.compare(date, to: parameterDate ?? Date(), toGranularity: .day)
+//        if result == .orderedSame || result == .orderedDescending{
+//
+//            handleCellSelected(view: validCell, cellState: cellState)
+//            handleCellTextColor(view: validCell, cellState: cellState)
+//
+//        }
     }
 }

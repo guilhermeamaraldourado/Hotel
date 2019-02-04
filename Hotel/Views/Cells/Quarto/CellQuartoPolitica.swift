@@ -1,5 +1,5 @@
 //
-//  CellHotelInfo.swift
+//  CellQuartoPolitica.swift
 //  Hotel
 //
 //  Created by WOOBA-MAC1 on 21/11/18.
@@ -8,14 +8,11 @@
 
 import UIKit
 
-class CellHotelInfo: UITableViewCell {
-    
-    @IBOutlet weak var lblNomeHotel: UILabel!
-    @IBOutlet weak var ratingImage: UIImageView!
-    
+class CellQuartoPolitica: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

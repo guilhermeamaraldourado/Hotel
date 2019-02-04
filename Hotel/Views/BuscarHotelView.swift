@@ -57,6 +57,7 @@ class BuscarHotelView: UITableViewController, DataEscolhidaProtocol, HotelEscolh
     var dataVolta: Date?
     let formatter = DateFormatter()
     let calendar = Calendar.current
+    
     var nomeHotel: String? {
         didSet{
             txtDestino.text = nomeHotel

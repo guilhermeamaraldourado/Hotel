@@ -21,4 +21,17 @@ class CellQuartoHotel: UITableViewCell {
     @IBOutlet weak var imagem: CustomImageView!
     @IBOutlet weak var lblNomeQuarto: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        imagem.layer.cornerRadius = 8
+        imagem.layer.masksToBounds = true
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+    
 }

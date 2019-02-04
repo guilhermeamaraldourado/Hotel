@@ -27,6 +27,12 @@
 		337122B22199ACEC00203DFB /* HoteisViewCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337122B12199ACEC00203DFB /* HoteisViewCollection.swift */; };
 		337122B42199AD5800203DFB /* CellHotelCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337122B32199AD5800203DFB /* CellHotelCollection.swift */; };
 		337F453121A5B7D30094E97F /* CellHotelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337F453021A5B7D30094E97F /* CellHotelInfo.swift */; };
+		337F453321A5C3900094E97F /* QuartoViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337F453221A5C3900094E97F /* QuartoViewTable.swift */; };
+		337F453521A5CE5C0094E97F /* CellQuartoDescricao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337F453421A5CE5C0094E97F /* CellQuartoDescricao.swift */; };
+		337F453721A5CEDA0094E97F /* CellQuartoPolitica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337F453621A5CEDA0094E97F /* CellQuartoPolitica.swift */; };
+		337F453921A5CEFC0094E97F /* CellQuartoComodidades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337F453821A5CEFC0094E97F /* CellQuartoComodidades.swift */; };
+		337F453B21A5CF1E0094E97F /* CellQuartoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337F453A21A5CF1E0094E97F /* CellQuartoInfo.swift */; };
+		337F453D21A70AED0094E97F /* ViewDescricao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337F453C21A70AED0094E97F /* ViewDescricao.swift */; };
 		338C6A5C219352E0009D9734 /* Quarto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C6A5B219352E0009D9734 /* Quarto.swift */; };
 		338C6A6021935A39009D9734 /* Crianca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C6A5F21935A39009D9734 /* Crianca.swift */; };
 		338C6A6221946B5E009D9734 /* ClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C6A6121946B5E009D9734 /* ClientAPI.swift */; };
@@ -47,6 +53,7 @@
 		33E767C0219B51A6001B6643 /* FSPagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E767BE219B51A1001B6643 /* FSPagerView.framework */; };
 		33E767C1219B51A6001B6643 /* FSPagerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33E767BE219B51A1001B6643 /* FSPagerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33E767CB219CBCF9001B6643 /* HotelViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E767CA219CBCF9001B6643 /* HotelViewTable.swift */; };
+		33F3717E21A88EF000DF289D /* CellEscolherQuarto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3717D21A88EF000DF289D /* CellEscolherQuarto.swift */; };
 		33FD0000218A389A00419FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FDFFFE218A389A00419FB3 /* Main.storyboard */; };
 		33FD0002218A389D00419FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FD0001218A389D00419FB3 /* Assets.xcassets */; };
 		33FD0005218A389D00419FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FD0003218A389D00419FB3 /* LaunchScreen.storyboard */; };
@@ -89,6 +96,12 @@
 		337122B12199ACEC00203DFB /* HoteisViewCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoteisViewCollection.swift; sourceTree = "<group>"; };
 		337122B32199AD5800203DFB /* CellHotelCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHotelCollection.swift; sourceTree = "<group>"; };
 		337F453021A5B7D30094E97F /* CellHotelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHotelInfo.swift; sourceTree = "<group>"; };
+		337F453221A5C3900094E97F /* QuartoViewTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuartoViewTable.swift; sourceTree = "<group>"; };
+		337F453421A5CE5C0094E97F /* CellQuartoDescricao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellQuartoDescricao.swift; sourceTree = "<group>"; };
+		337F453621A5CEDA0094E97F /* CellQuartoPolitica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellQuartoPolitica.swift; sourceTree = "<group>"; };
+		337F453821A5CEFC0094E97F /* CellQuartoComodidades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellQuartoComodidades.swift; sourceTree = "<group>"; };
+		337F453A21A5CF1E0094E97F /* CellQuartoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellQuartoInfo.swift; sourceTree = "<group>"; };
+		337F453C21A70AED0094E97F /* ViewDescricao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDescricao.swift; sourceTree = "<group>"; };
 		338C6A5B219352E0009D9734 /* Quarto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quarto.swift; sourceTree = "<group>"; };
 		338C6A5F21935A39009D9734 /* Crianca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crianca.swift; sourceTree = "<group>"; };
 		338C6A6121946B5E009D9734 /* ClientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAPI.swift; sourceTree = "<group>"; };
@@ -108,6 +121,7 @@
 		33E1AE4D218B7E5D0014ACE3 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		33E767BE219B51A1001B6643 /* FSPagerView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSPagerView.framework; path = Carthage/Build/iOS/FSPagerView.framework; sourceTree = "<group>"; };
 		33E767CA219CBCF9001B6643 /* HotelViewTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewTable.swift; sourceTree = "<group>"; };
+		33F3717D21A88EF000DF289D /* CellEscolherQuarto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEscolherQuarto.swift; sourceTree = "<group>"; };
 		33FD0001218A389D00419FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33FD0004218A389D00419FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33FD0006218A389D00419FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,6 +200,7 @@
 				3300EF2A21930B5B00838D3F /* ViewCriancaIdade.swift */,
 				337122B12199ACEC00203DFB /* HoteisViewCollection.swift */,
 				33E767CA219CBCF9001B6643 /* HotelViewTable.swift */,
+				337F453221A5C3900094E97F /* QuartoViewTable.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -270,6 +285,12 @@
 			isa = PBXGroup;
 			children = (
 				33A6C24F21A2DF3D00254328 /* CellQuartoHotel.swift */,
+				337F453421A5CE5C0094E97F /* CellQuartoDescricao.swift */,
+				337F453621A5CEDA0094E97F /* CellQuartoPolitica.swift */,
+				337F453821A5CEFC0094E97F /* CellQuartoComodidades.swift */,
+				337F453A21A5CF1E0094E97F /* CellQuartoInfo.swift */,
+				337F453C21A70AED0094E97F /* ViewDescricao.swift */,
+				33F3717D21A88EF000DF289D /* CellEscolherQuarto.swift */,
 			);
 			path = Quarto;
 			sourceTree = "<group>";
@@ -389,6 +410,8 @@
 				3300EF1E2190826B00838D3F /* HospedagemView.swift in Sources */,
 				338C6A6221946B5E009D9734 /* ClientAPI.swift in Sources */,
 				33E1AE4E218B7E5D0014ACE3 /* Dynamic.swift in Sources */,
+				337F453D21A70AED0094E97F /* ViewDescricao.swift in Sources */,
+				337F453321A5C3900094E97F /* QuartoViewTable.swift in Sources */,
 				33A6C26221A3455A00254328 /* CellHotelPoliticas.swift in Sources */,
 				33A6C25821A3424500254328 /* Endereco.swift in Sources */,
 				338C6A6021935A39009D9734 /* Crianca.swift in Sources */,
@@ -397,10 +420,14 @@
 				33FDFFFD218A389A00419FB3 /* BuscarHotelView.swift in Sources */,
 				33A6C25E21A3453D00254328 /* CellHotelDescricao.swift in Sources */,
 				3300EF2B21930B5B00838D3F /* ViewCriancaIdade.swift in Sources */,
+				337F453921A5CEFC0094E97F /* CellQuartoComodidades.swift in Sources */,
 				337F453121A5B7D30094E97F /* CellHotelInfo.swift in Sources */,
 				337122B22199ACEC00203DFB /* HoteisViewCollection.swift in Sources */,
 				33A6C25621A341D600254328 /* Telefone.swift in Sources */,
+				337F453521A5CE5C0094E97F /* CellQuartoDescricao.swift in Sources */,
+				337F453721A5CEDA0094E97F /* CellQuartoPolitica.swift in Sources */,
 				33A6C25221A3135C00254328 /* CellButton.swift in Sources */,
+				33F3717E21A88EF000DF289D /* CellEscolherQuarto.swift in Sources */,
 				338C6A5C219352E0009D9734 /* Quarto.swift in Sources */,
 				33A6C25C21A3452F00254328 /* CellHotelComodidades.swift in Sources */,
 				3300EF292191C6FE00838D3F /* HospedagemViewModel.swift in Sources */,
@@ -409,6 +436,7 @@
 				33A6C25A21A3430A00254328 /* Comodidade.swift in Sources */,
 				337122B42199AD5800203DFB /* CellHotelCollection.swift in Sources */,
 				33E767CB219CBCF9001B6643 /* HotelViewTable.swift in Sources */,
+				337F453B21A5CF1E0094E97F /* CellQuartoInfo.swift in Sources */,
 				337122AA21960F5900203DFB /* HoteisViewModel.swift in Sources */,
 				33A6C26021A3454B00254328 /* CellHotelContato.swift in Sources */,
 				336E8955218B39F700AF9441 /* DestinosView.swift in Sources */,

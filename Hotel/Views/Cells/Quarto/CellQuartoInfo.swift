@@ -1,5 +1,5 @@
 //
-//  CellHotelInfo.swift
+//  CellQuartoInfo.swift
 //  Hotel
 //
 //  Created by WOOBA-MAC1 on 21/11/18.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-class CellHotelInfo: UITableViewCell {
+class CellQuartoInfo: UITableViewCell {
     
-    @IBOutlet weak var lblNomeHotel: UILabel!
-    @IBOutlet weak var ratingImage: UIImageView!
+    @IBOutlet weak var lblNomeQuarto: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

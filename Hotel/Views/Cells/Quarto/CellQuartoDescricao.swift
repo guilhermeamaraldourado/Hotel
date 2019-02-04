@@ -1,5 +1,5 @@
 //
-//  CellHotelInfo.swift
+//  CellQuartoDescricao.swift
 //  Hotel
 //
 //  Created by WOOBA-MAC1 on 21/11/18.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class CellHotelInfo: UITableViewCell {
+class CellQuartoDescricao: UITableViewCell {
     
-    @IBOutlet weak var lblNomeHotel: UILabel!
-    @IBOutlet weak var ratingImage: UIImageView!
+    @IBOutlet weak var lblDescricaoQuarto: UILabel!
+    var delegate: verMais?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,5 +23,11 @@ class CellHotelInfo: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    @IBAction func verMais(_ sender: UIButton) {
+        
+        if let del = delegate{
+            del.verMais()
+        }
+    }
 }

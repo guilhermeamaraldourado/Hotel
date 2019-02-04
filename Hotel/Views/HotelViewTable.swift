@@ -17,8 +17,8 @@ protocol HeightCells {
 
 class HotelViewTable: UITableViewController, FSPagerViewDelegate, FSPagerViewDataSource, HeightCells{
     
+    private let SEGUE_QUARTO = "segueToQuarto"
     
-    var imagens: [UIImage] = []
     var pageView: FSPagerView!
     var viewModel: HoteisViewModel?
     var quartos: [Room] = []
@@ -46,6 +46,7 @@ class HotelViewTable: UITableViewController, FSPagerViewDelegate, FSPagerViewDat
         quartos = (viewModel?.hoteis.value[hotelEscolhido].RoomTypes!)!
         
         pageView = FSPagerView()
+        pageView.isInfinite = true
         view.addSubview(pageView)
         pageView.translatesAutoresizingMaskIntoConstraints = false
         let pageViewHeight = view.frame.width * 0.5625
@@ -110,16 +111,14 @@ class HotelViewTable: UITableViewController, FSPagerViewDelegate, FSPagerViewDat
         switch indexPath.row {
         case 0:
             
-            var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-            if cell == nil{
-                cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-            }
-            return cell!
+            return UITableViewCell()
             
         case 1:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellInfoHotel") as! CellHotelInfo
+            let rating = viewModel?.hoteis.value[hotelEscolhido].Rating
             cell.lblNomeHotel.text = viewModel?.hoteis.value[hotelEscolhido].Name
+            cell.ratingImage.image = UIImage(named: "stars\(rating!)")
             return cell
             
         case 2:
@@ -160,10 +159,28 @@ class HotelViewTable: UITableViewController, FSPagerViewDelegate, FSPagerViewDat
         default:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellQuartoHotel") as! CellQuartoHotel
-            cell.urlImagem = quartos[indexPath.row - 6].Photos?.first
+            cell.urlImagem = quartos[indexPath.row - 6].MainPhotoPath
             cell.lblNomeQuarto.text = quartos[indexPath.row - 6].Name
             
             return cell
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row > 5{
+            performSegue(withIdentifier: SEGUE_QUARTO, sender: indexPath)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == SEGUE_QUARTO{
+            
+            let index = sender as! IndexPath
+            let vc = segue.destination as! QuartoViewTable
+            vc.hotelEscolhido = hotelEscolhido
+            vc.quartoEscolhido = index.row - 6
+            vc.viewModel = viewModel
+            vc.urlsImages = viewModel!.hoteis.value[hotelEscolhido].RoomTypes![index.row - 6].Photos
         }
     }
     
